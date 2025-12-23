@@ -1,0 +1,32 @@
+# config/default.yaml
+# 基础配置
+
+github:
+  # GitHub设置
+  token: ${GITHUB_TOKEN}  # 从环境变量读取
+  max_repositories: 2
+  min_stars: 100
+  languages: ["python"]
+  max_files_per_repo: 10
+
+processing:
+  # 处理设置
+  max_chunk_lines: 30
+  questions_per_chunk: 2
+
+  # 使用免费模式（不需要OpenAI）
+  use_free_mode: true
+
+  # 输出设置
+  output_format: "json"
+
+storage:
+  # 存储设置
+  data_dir: "./data"
+  datasets_dir: "./data/datasets"
+  temp_dir: "./data/temp"
+
+logging:
+  # 日志设置
+  level: "INFO"
+  file: "./logs/code_qa.log"
