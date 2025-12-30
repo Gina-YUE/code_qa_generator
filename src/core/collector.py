@@ -214,9 +214,14 @@ class CodeCollector:
         """
         if target_dir is None:
             # 生成临时目录
-            repo_name = repo_url.split('/')[-1].replace('.git', '')
-            # 指定D盘或其他盘的临时目录
-            TEMP_BASE = "E:/QA_project/"  # 或 E:/temp/
+            repo_name = repo_url.split('/')[-1].replace('.git', '')# 获取当前目录
+            current_dir = os.getcwd()
+
+            # 获取上一级目录
+            parent_dir = os.path.dirname(current_dir)
+            print(parent_dir)
+
+            TEMP_BASE = os.path.join(parent_dir, 'data','raw')
             # 创建临时目录在其他盘
             target_dir = tempfile.mkdtemp(dir=TEMP_BASE, prefix=f"repo_{repo_name}_")
 

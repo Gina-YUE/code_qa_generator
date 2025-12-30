@@ -127,7 +127,12 @@ def create_sample_data():
     ]
 
     # 保存
-    output_file = data_dir / "sample_qa.json"
+    current_dir = os.getcwd()
+    # 获取上一级目录
+    parent_dir = os.path.dirname(current_dir)
+    print(parent_dir)
+    output_file = os.path.join(parent_dir, 'data','processed', '/sample_qa.json')
+
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump({
             "created_at": datetime.now().isoformat(),
@@ -136,7 +141,6 @@ def create_sample_data():
 
     print(f"✅ 创建示例数据: {output_file}")
     return True
-
 
 def run_simple_test():
     """运行所有测试"""

@@ -33,7 +33,7 @@ GITHUB_TOKEN=your_github_token_here
 
 🎯 快速开始
 1. 简单测试
-python run_simple_fixed.py
+python run.py
 2. 完整运行
 python src/main.py
 3. 自定义配置
@@ -53,9 +53,8 @@ processing:
 
 code_qa_generator/
 ├── data/                   # 数据目录
-│   ├── datasets/           # 生成的QA数据集
-│   ├── processed/          # 处理后的数据
-│   └── raw/                # 原始数据
+│   ├──processed/           # QA生成处理后的数据
+│   └──raw/                 # 原始数据
 ├── src/                    # 源代码
 │   ├── core/               # 核心模块
 │   │   ├── collector.py    # 代码收集器
@@ -64,12 +63,12 @@ code_qa_generator/
 │   │   └── validator.py    # 数据验证器
 │   ├── storage/            # 存储模块
 │   ├── utils/              # 工具函数
+│   ├── simple_test/        # 测试函数
 │   └── main.py             # 主程序入口
 ├── config/                 # 配置文件
-├── tests/                  # 测试代码
-├── scripts/                # 脚本目录
 ├── .env.example            # 环境变量示例
 ├── requirements.txt        # Python依赖
+├── run.py                  # 测试代码
 └── README.md               # 项目文档
 
 

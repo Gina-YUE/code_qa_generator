@@ -1,10 +1,10 @@
 {
   "repository": "https://github.com/pallets/flask.git",
-  "generated_at": "2025-12-23T15:25:25.368690",
+  "generated_at": "2025-12-30T08:13:14.459127",
   "total_qa": 6,
   "qa_pairs": [
     {
-      "id": "4d05f721",
+      "id": "67dbcafb",
       "question": {
         "text": "函数 github_link 有什么功能？",
         "type": "function_understanding",
@@ -19,7 +19,7 @@
       "language": "python"
     },
     {
-      "id": "b0005891",
+      "id": "2983853d",
       "question": {
         "text": "请解释函数 github_link 的工作原理",
         "type": "code_explanation",
@@ -34,7 +34,7 @@
       "language": "python"
     },
     {
-      "id": "203cfad8",
+      "id": "9d4e2280",
       "question": {
         "text": "文件 examples\\celery\\make_celery.py 的主要功能是什么？",
         "type": "function_understanding",
@@ -49,7 +49,7 @@
       "language": "python"
     },
     {
-      "id": "2da82cd4",
+      "id": "4ddba53c",
       "question": {
         "text": "关于 examples\\celery\\make_celery.py 的代码，解释一下这段代码如何工作？",
         "type": "code_explanation",
@@ -64,7 +64,7 @@
       "language": "python"
     },
     {
-      "id": "3782564a",
+      "id": "07ec9484",
       "question": {
         "text": "函数 add 有什么功能？",
         "type": "function_understanding",
@@ -79,7 +79,7 @@
       "language": "python"
     },
     {
-      "id": "85b080a6",
+      "id": "5f3dfb30",
       "question": {
         "text": "请解释函数 add 的工作原理",
         "type": "code_explanation",

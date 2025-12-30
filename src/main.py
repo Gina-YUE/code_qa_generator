@@ -37,7 +37,7 @@ def qa_pair_to_dict(qa_pair):
 def main():
     """主函数"""
     print("=" * 50)
-    print("    代码QA数据生成器 (修复版)")
+    print("    代码QA数据生成器")
     print("=" * 50)
 
     from core.collector import CodeCollector
@@ -103,7 +103,13 @@ def main():
             qa_dicts = [qa_pair_to_dict(qa) for qa in all_qa]
 
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = f"qa_dataset_{timestamp}.json"
+
+            current_dir = os.getcwd()
+            # 获取上一级目录
+            parent_dir = os.path.dirname(current_dir)
+            print(parent_dir)
+            save_path = os.path.join(parent_dir, 'data', 'processed')
+            output_file = os.path.join(save_path, f"qa_dataset_{timestamp}.json")
 
             result = {
                 "repository": repo_url,

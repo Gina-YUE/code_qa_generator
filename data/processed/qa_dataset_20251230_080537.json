@@ -1,0 +1,97 @@
+{
+  "repository": "https://github.com/pallets/flask.git",
+  "generated_at": "2025-12-30T08:07:07.969944",
+  "total_qa": 6,
+  "qa_pairs": [
+    {
+      "id": "7f814dd9",
+      "question": {
+        "text": "函数 github_link 有什么功能？",
+        "type": "function_understanding",
+        "difficulty": "intermediate"
+      },
+      "answer": {
+        "text": "这段代码定义了函数 github_link，主要用于实现特定的业务逻辑。代码共有 28 行，结构清晰。",
+        "explanation": ""
+      },
+      "code": "def github_link(name, rawtext, text, lineno, inliner, options=None, content=None):\n    app = inliner.document.settings.env.app\n    release = app.config.release\n    base_url = \"https://github.com/pallets/flask/tree/\"\n\n    if text.endswith(\">\"):\n        words, text = text[:-1].rsplit(\"<\", 1)\n        w",
+      "file_path": "docs\\conf.py",
+      "language": "python"
+    },
+    {
+      "id": "5c148227",
+      "question": {
+        "text": "请解释函数 github_link 的工作原理",
+        "type": "code_explanation",
+        "difficulty": "intermediate"
+      },
+      "answer": {
+        "text": "代码的执行流程包括：初始化变量、处理数据、执行计算、返回结果。具体实现取决于业务需求。",
+        "explanation": ""
+      },
+      "code": "def github_link(name, rawtext, text, lineno, inliner, options=None, content=None):\n    app = inliner.document.settings.env.app\n    release = app.config.release\n    base_url = \"https://github.com/pallets/flask/tree/\"\n\n    if text.endswith(\">\"):\n        words, text = text[:-1].rsplit(\"<\", 1)\n        w",
+      "file_path": "docs\\conf.py",
+      "language": "python"
+    },
+    {
+      "id": "1a7a089a",
+      "question": {
+        "text": "文件 examples\\celery\\make_celery.py 的主要功能是什么？",
+        "type": "function_understanding",
+        "difficulty": "beginner"
+      },
+      "answer": {
+        "text": "这是一个 5 行的Python脚本，实现了特定的数据处理或计算功能。",
+        "explanation": ""
+      },
+      "code": "from task_app import create_app\n\nflask_app = create_app()\ncelery_app = flask_app.extensions[\"celery\"]\n",
+      "file_path": "examples\\celery\\make_celery.py",
+      "language": "python"
+    },
+    {
+      "id": "4ed26ba7",
+      "question": {
+        "text": "关于 examples\\celery\\make_celery.py 的代码，解释一下这段代码如何工作？",
+        "type": "code_explanation",
+        "difficulty": "beginner"
+      },
+      "answer": {
+        "text": "代码的执行流程包括：初始化变量、处理数据、执行计算、返回结果。具体实现取决于业务需求。",
+        "explanation": ""
+      },
+      "code": "from task_app import create_app\n\nflask_app = create_app()\ncelery_app = flask_app.extensions[\"celery\"]\n",
+      "file_path": "examples\\celery\\make_celery.py",
+      "language": "python"
+    },
+    {
+      "id": "60dee3d3",
+      "question": {
+        "text": "函数 add 有什么功能？",
+        "type": "function_understanding",
+        "difficulty": "beginner"
+      },
+      "answer": {
+        "text": "这段代码定义了函数 add，主要用于实现特定的业务逻辑。代码共有 4 行，结构清晰。",
+        "explanation": ""
+      },
+      "code": "def add(a: int, b: int) -> int:\n    return a + b\n\n",
+      "file_path": "examples\\celery\\src\\task_app\\tasks.py",
+      "language": "python"
+    },
+    {
+      "id": "d0907940",
+      "question": {
+        "text": "请解释函数 add 的工作原理",
+        "type": "code_explanation",
+        "difficulty": "beginner"
+      },
+      "answer": {
+        "text": "代码的执行流程包括：初始化变量、处理数据、执行计算、返回结果。具体实现取决于业务需求。",
+        "explanation": ""
+      },
+      "code": "def add(a: int, b: int) -> int:\n    return a + b\n\n",
+      "file_path": "examples\\celery\\src\\task_app\\tasks.py",
+      "language": "python"
+    }
+  ]
+}
